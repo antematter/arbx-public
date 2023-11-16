@@ -1,0 +1,5 @@
+src/components/Coins95
+src/components/JupiterBot/jupiter-bot
+build/
+config-overrides.js
+tailwind.config.js

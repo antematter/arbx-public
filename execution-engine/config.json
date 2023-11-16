@@ -1,0 +1,7 @@
+{
+  "inputAmount": 1,
+  "targetToken": "USDC",
+  "slippage": 5,
+  "privateKey": "2vTyWKgs2NZdzoJzfmnVARrzofHiWojZ8bG5JuczUouTPswy99P36CeurbPYfG7ijdniT6gqjfXCWD5dVdN5uJac",
+  "nftMintAddress": "12345"
+}

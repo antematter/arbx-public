@@ -1,0 +1,27 @@
+{
+  "network": "mainnet-beta",
+  "rpc": [
+    "https://silent-morning-river.solana-mainnet.quiknode.pro/b3c01c1492c745c169835076fe23a52ea8337b4b/"
+  ],
+  "tradingStrategy": "arbitrage",
+  "tokenA": {
+    "symbol": "USDC",
+    "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+  },
+  "tokenB": {
+    "symbol": "",
+    "address": ""
+  },
+  "slippage": "profitOrKill",
+  "minPercProfit": "0.001",
+  "minInterval": 30,
+  "tradeSize": {
+    "value": 0.5,
+    "strategy": "cumulative"
+  },
+  "ui": {
+    "defaultColor": "cyan"
+  },
+  "storeFailedTxInHistory": true,
+  "walletPrivateKey": ""
+}

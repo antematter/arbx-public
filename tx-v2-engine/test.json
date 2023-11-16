@@ -1,0 +1,29 @@
+thread '<unnamed>' panicked at 'called `Result: :unwrap()` on an `Err` value: ClientError { request: Some(SendTransaction), kind: RpcError(RpcResponseError { code: -32002, message: "Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1772", data: SendTransactionPreflightFailure(RpcSimulateTransactionResult { err: Some(InstructionError(0, Custom(6002))), logs: Some([
+                "Program 22bcx5mVqVgWkey4Y2xVA7NdaYomCDx6TTAgJdRDJmoK invoke [1]",
+                "Program log: Instruction: Swap",
+                "Program 9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin invoke [2]",
+                "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+                "Program log: Instruction: Transfer",
+                "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3052 of 968610 compute units",
+                "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+                "Program 9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin consumed 12677 of 977631 compute units",
+                "Program 9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin success",
+                "Program 9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin invoke [2]",
+                "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+                "Program log: Instruction: Transfer",
+                "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3052 of 949243 compute units",
+                "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+                "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+                "Program log: Instruction: Transfer",
+                "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3132 of 943626 compute units",
+                "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+                "Program 9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin consumed 16594 of 956631 compute units",
+                "Program 9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin success",
+                "Program log: 4ZfIrPLY4R6w4H4JAAAAAAEAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADLrlYTtVlLFE4nx9hCtT3W4nrZWvkcR1Plqd2a1wBwOMQeZ09xr18056MH7LZ8sJ1/wGYcUsRRZGtQ6XVECTIxxB5nT3GvXzTnowfstnywnX/AZhxSxFFka1DpdUQJMjEw7lgtAXaD/xekD/t6gxK7/+I2kMAqTFGeQA6pJ9OWIQ==",
+                "Program log: Custom program error: 0x1772",
+                "Program 22bcx5mVqVgWkey4Y2xVA7NdaYomCDx6TTAgJdRDJmoK consumed 65977 of 1000000 compute units",
+                "Program 22bcx5mVqVgWkey4Y2xVA7NdaYomCDx6TTAgJdRDJmoK failed: custom program error: 0x1772"
+            ]), accounts: None, units_consumed: Some(0), return_data: None
+        })
+    })
+}', src/main.rs: 202: 10

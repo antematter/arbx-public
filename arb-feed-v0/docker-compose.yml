@@ -1,0 +1,34 @@
+version: '3.7'
+services:
+  neo4j:
+    image: neo4j:latest
+    ports:
+      - 7474:7474
+      - 7687:7687
+    environment:
+      - NEO4J_AUTH=neo4j/changeme
+  arbitrage:
+    build: ./arbitrage
+    ports:
+      - 8084:8084
+    expose:
+      - 8085
+    depends_on:
+      - neo4j
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "5g"
+        max-file: "2"
+  data:
+    build: ./data
+    environment:
+      - SERUM_VIAL_URL=${SERUM_VIAL_URL}
+    depends_on:
+      - neo4j
+      - arbitrage
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "5g"
+        max-file: "2"

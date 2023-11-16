@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+if git diff --cached --quiet -- "arbx-console/"
+then
+  echo "No changes to arbx-console, skipping pre-commit hook"
+  exit 0
+else
+  echo "Changes to arbx-console, running pre-commit hook"
+
+  cd arbx-console
+  yarn typecheck
+  yarn lint-staged
+fi
+

@@ -1,0 +1,94 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "build": {
+    "beforeBuildCommand": "yarn build",
+    "beforeDevCommand": "yarn start",
+    "devPath": "http://localhost:3000",
+    "distDir": "../build"
+  },
+  "package": {
+    "productName": "ArbX Console",
+    "version": "0.2.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "http": {
+        "all": true,
+        "request": true,
+        "scope": ["https://**", "http://*"]
+      },
+      "fs": {
+        "writeFile": true,
+        "createDir": true,
+        "exists": true,
+        "scope": ["$CACHE/*"]
+      },
+      "shell": {
+        "scope": [
+          {
+            "name": "execution-engine/execution-engine",
+            "args": true,
+            "sidecar": true
+          }
+        ],
+        "sidecar": true
+      },
+      "path": {
+        "all": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "copyright": "",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": ["execution-engine/execution-engine"],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "com.arbx.console",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": true,
+      "endpoints": [
+        "https://gist.githubusercontent.com/parkerqueen/2348165f9f05277ef141b797fa6a117c/raw/arbx-tauri-update-file.json"
+      ],
+      "dialog": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEUyRUIwMDE3RDdEOUJFQzkKUldUSnZ0blhGd0RyNGk3VWhkL3FraXBiZ2Z4UCtLd09ET3NIVWR2VXdzOGgwTENTZFJBb0EycGwK"
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 1080,
+        "width": 1920,
+        "resizable": true,
+        "title": "ArbX Console"
+      }
+    ]
+  }
+}

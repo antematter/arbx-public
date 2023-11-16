@@ -1,0 +1,6 @@
+{
+    "inputAmount": 1,
+    "targetToken": "USDC",
+    "slippage": 5,
+    "privateKey": ""
+}

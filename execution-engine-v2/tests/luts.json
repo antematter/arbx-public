@@ -1,0 +1,14 @@
+{
+    "SRM": {
+        "usdt-usdc": "73jeEAvWrMLbqBKJMupoK96yWgqWW2FNdZMmkdWnwC9t",
+        "sol-usdc": "73jeEAvWrMLbqBKJMupoK96yWgqWW2FNdZMmkdWnwC9t",
+        "srm-usdc": "73jeEAvWrMLbqBKJMupoK96yWgqWW2FNdZMmkdWnwC9t"
+    },
+    "ORCA": {
+        "usdt-usdc": "EjuNveaCFs4Cgb3buaoY4tvu96oZLkRDhW2HDQ2ParSp"
+    },
+    "RAY": {
+        "sol-usdc": "6RyqmwiKyACJdB88CGGsDbTyN23kjY857HqmSxFBXn3L",
+        "usdt-usdc": "14ESkgwJDQ9bfn8srrEkvTC1nAZUTTyTgtbDMrwe6xv7"
+    }
+}

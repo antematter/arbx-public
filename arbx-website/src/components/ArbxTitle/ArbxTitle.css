@@ -1,0 +1,31 @@
+.arbx-title-hoverd {
+  background: linear-gradient(
+    91.61deg,
+    #ffc414 -6.28%,
+    #ff2b2b 16.16%,
+    #ff0c67 31.33%,
+    #ff65eb 57.06%,
+    #62bcff 78.17%,
+    #41fffc 99.28%,
+    #52ff65 119.73%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  width: fit-content;
+}
+
+.arbx-logo {
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #ffc414 0deg,
+    #ff2b2b 63.75deg,
+    #ff0c67 106.88deg,
+    #ff65eb 180deg,
+    #62bcff 240deg,
+    #41fffc 300deg,
+    #52ff65 358.13deg,
+    #ffc414 360deg
+  );
+}

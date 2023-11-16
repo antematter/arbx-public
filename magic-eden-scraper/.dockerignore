@@ -1,0 +1,5 @@
+env
+.gitignore
+Dockerfile
+metaplex-scripts/json-metadata
+metaplex-scripts/node_modules

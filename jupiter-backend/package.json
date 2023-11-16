@@ -1,0 +1,31 @@
+{
+  "name": "jupiter-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Muhammad Saad",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@jup-ag/crema-sdk": "^2.0.7",
+    "@jup-ag/cykura-sdk": "0.1.25",
+    "@jup-ag/cykura-sdk-core": "0.1.8",
+    "@jup-ag/lifinity-sdk": "^0.1.72",
+    "@jup-ag/math": "^2.0.0-beta.4",
+    "@jup-ag/whirlpool-sdk": "0.1.1",
+    "@mercurial-finance/optimist": "^0.1.6",
+    "@project-serum/anchor": "0.24.2",
+    "@project-serum/common": "^0.0.1-beta.3",
+    "@project-serum/serum": "^0.13.65",
+    "@saberhq/stableswap-sdk": "^1.14.5",
+    "@solana/buffer-layout": "4.0.0",
+    "@solana/spl-token": "0.1.8",
+    "@solana/web3.js": "^1.59.1",
+    "bn.js": "^5.2.1",
+    "chalk": "4.1.2",
+    "cross-fetch": "^3.1.5",
+    "decimal.js": "^10.4.0",
+    "jsbi": "^4.3.0"
+  }
+}

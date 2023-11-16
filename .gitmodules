@@ -1,0 +1,9 @@
+[submodule "serum-dex"]
+	path = serum-dex
+	url = git@github.com:saad039/serum-dex.git
+[submodule "swap"]
+	path = swap
+	url = git@github.com:saad039/swap.git
+[submodule "execution-engine/deps/raydium-sdk"]
+	path = execution-engine/deps/raydium-sdk
+	url = git@github.com:antematter/raydium-sdk.git
