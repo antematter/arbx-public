@@ -1,0 +1,6 @@
+- `Dockerfile` is the file that will run feeds however that file does not contain raydium feeds since raydium SDK is out dated and that has not been yet updated in feeds/raydium folder.
+- `test.Dockerfile` is the file with raydium but it will not work due to raydium SDK error 
+- Open terminal
+- Give the following commands to run feed
+- - docker build -t arbx-feeds .
+- - docker run -d --name arbx-feeds arbx-feeds
