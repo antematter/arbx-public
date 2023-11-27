@@ -1,5 +1,4 @@
 import ArbxTitle from "../ArbxTitle/ArbxTitle";
-
 import { useState } from "react";
 
 import { motion } from "framer-motion";
@@ -23,26 +22,48 @@ const PageTemplate: FC<PageTemplateProps> = ({
       >
         <div className="flex w-full px-6  justify-between items-center">
           <ArbxTitle />
-          <motion.button
-            onMouseEnter={() => {
-              setDownloadHoverd(true);
-            }}
-            onMouseLeave={() => {
-              setDownloadHoverd(false);
-            }}
-            onClick={() => {
-              onDownloadClick && onDownloadClick();
-              //setshowDownloadSlide(true);
-            }}
-            className={
-              "flex w-fit font-roobert gap-1  items-center bg-transparent border-0" +
-              " " +
-              (downloadHoverd ? "text-primary" : "text-secondary")
-            }
-          >
-            <p>DOWNLOAD</p>
-            <p className="mb-[0.2rem]">|</p>
-          </motion.button>
+
+          <div className="flex font-roobert gap-1  items-center bg-transparent border-0 text-secondary">
+            
+            <a
+              href="https://github.com/antematter/arbx-public/tree/main"
+              target="_blank"
+              className="flex gap-1 hover:text-primary"
+            >
+              <p className="my-auto">GITHUB</p>
+              <p className="mb-[0.2rem]">|</p>
+            </a>
+
+            <a
+              href="https://antematter.gitbook.io/arbx/"
+              target="_blank"
+              className="flex gap-1 hover:text-primary"
+            >
+              <p className="my-auto">GITBOOK</p>
+              <p className="mb-[0.2rem]">|</p>
+            </a>
+
+            <motion.button
+              onMouseEnter={() => {
+                setDownloadHoverd(true);
+              }}
+              onMouseLeave={() => {
+                setDownloadHoverd(false);
+              }}
+              onClick={() => {
+                onDownloadClick && onDownloadClick();
+                //setshowDownloadSlide(true);
+              }}
+              className={
+                "flex w-fit font-roobert gap-1  items-center bg-transparent border-0" +
+                " " +
+                (downloadHoverd ? "text-primary" : "text-secondary")
+              }
+            >
+              <p>DOWNLOAD</p>
+              <p className="mb-[0.2rem]">|</p>
+            </motion.button>
+          </div>
         </div>
         {children}
       </div>
