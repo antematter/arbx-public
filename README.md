@@ -1,3 +1,5 @@
+> **Note:** This project is not currently under development. Active development ceased around November 2021. Interested parties may contact us at hello@antematter.io for details and contributions.
+
 ### ArbX project has the following components 
 1. Feeds
 2. Graphs
